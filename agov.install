@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function agov_install() {
+  // The system.site config entity must be configured during install.
+  \Drupal::configFactory()->getEditable('system.site')
+    ->set('mail', 'admin@agov.com.au')
+    ->set('name', 'aGov')
+    ->set('page.front', '/home')
+    ->save();
+
+  // @TODO, remove this once we can enable pathauto before file_entity. Also,
+  // @see https://github.com/md-systems/file_entity/pull/48
+  if (\Drupal::moduleHandler()->moduleExists('file_entity')) {
+    $entity_field_manager = \Drupal::service('entity_field.manager');
+    $type_storage_definition = $entity_field_manager->getFieldStorageDefinitions('file')['type'];
+    \Drupal::entityDefinitionUpdateManager()->installFieldStorageDefinition('type', 'file', 'file_entity', $type_storage_definition);
+  }
+}
+
+/**
+ * Implements hook_install_tasks().
+ */
+function agov_install_tasks(&$install_state) {
+  return [
+    'configurable_profile_dependencies' => [
+      'display_name' => t('Configurable Modules'),
+      'display' => TRUE,
+      'type' => 'form',
+      'function' => 'Drupal\agov\Form\ConfigurableProfileDependenciesForm',
+    ],
+  ];
+}
