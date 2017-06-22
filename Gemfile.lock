@@ -57,6 +57,3 @@ DEPENDENCIES
   scss_lint (~> 0.41)
   typey (>= 1.0.0.beta.8, < 2)
   zen-grids (~> 2.0.0.beta.3)
-
-BUNDLED WITH
-   1.10.6
