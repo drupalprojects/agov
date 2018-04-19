@@ -2758,7 +2758,7 @@
       }
     },
     "kss": {
-      "version": "github:kss-node/kss-node#67f986b3c9dbcfb585bc2b9e1ca0ec93c1f74f5c",
+      "version": "github:kss-node/kss-node#4c6502f525e9b93d385c6acab91964e83f074c2a",
       "dev": true,
       "requires": {
         "bluebird": "3.5.1",
@@ -2767,6 +2767,7 @@
         "handlebars": "4.0.11",
         "marked": "0.3.19",
         "nunjucks": "3.1.2",
+        "resolve": "1.6.0",
         "twig": "1.10.5",
         "twig-drupal-filters": "1.1.0",
         "yargs": "11.0.0"
