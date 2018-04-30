@@ -2758,7 +2758,7 @@
       }
     },
     "kss": {
-      "version": "github:kss-node/kss-node#67f986b3c9dbcfb585bc2b9e1ca0ec93c1f74f5c",
+      "version": "github:kss-node/kss-node#94e86ae700c19edf8c9cb13e5c03d8006469ce55",
       "dev": true,
       "requires": {
         "bluebird": "3.5.1",
@@ -2767,6 +2767,7 @@
         "handlebars": "4.0.11",
         "marked": "0.3.19",
         "nunjucks": "3.1.2",
+        "resolve": "1.6.0",
         "twig": "1.10.5",
         "twig-drupal-filters": "1.1.0",
         "yargs": "11.0.0"
@@ -2785,9 +2786,9 @@
           "dev": true
         },
         "cliui": {
-          "version": "4.0.0",
-          "resolved": "https://registry.npmjs.org/cliui/-/cliui-4.0.0.tgz",
-          "integrity": "sha512-nY3W5Gu2racvdDk//ELReY+dHjb9PlIcVDFXP72nVIhq2Gy3LuVXYwJoPVudwQnv1shtohpgkdCKT2YaKY0CKw==",
+          "version": "4.1.0",
+          "resolved": "https://registry.npmjs.org/cliui/-/cliui-4.1.0.tgz",
+          "integrity": "sha512-4FG+RSG9DL7uEwRUZXZn3SS34DiDPfzP0VOiEwtUWlE+AR2EIg+hSyvrIgUUfhdgR/UkAeW2QHgeP+hWrXs7jQ==",
           "dev": true,
           "requires": {
             "string-width": "2.1.1",
@@ -2837,7 +2838,7 @@
           "integrity": "sha512-Rjp+lMYQOWtgqojx1dEWorjCofi1YN7AoFvYV7b1gx/7dAAeuI4kN5SZiEvr0ZmsZTOpDRcCqrpI10L31tFkBw==",
           "dev": true,
           "requires": {
-            "cliui": "4.0.0",
+            "cliui": "4.1.0",
             "decamelize": "1.2.0",
             "find-up": "2.1.0",
             "get-caller-file": "1.0.2",
